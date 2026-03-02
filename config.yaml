@@ -1,0 +1,59 @@
+# ClawSelfImprove Configuration
+# Enhanced settings for OpenKrab ecosystem
+
+# Core Features
+auto_translate: true
+safety_mode: "standard"
+clawmemory_integration: true
+thai_support: true
+
+# Learning Management
+max_reflections_per_session: 5
+promotion_threshold: 8
+auto_promote: false
+
+# Safety and Privacy
+privacy_filter: true
+require_human_approval: true
+dry_run_mode: false
+
+# Language Settings
+default_language: "english"
+auto_detect_language: true
+thai_dictionary_file: "templates/thai-dictionary.json"
+
+# Integration Settings
+clawmemory_endpoint: "http://localhost:8080"
+clawmemory_api_key: ""
+vectorize_learnings: true
+
+# Rate Limiting
+max_promotions_per_hour: 3
+max_auto_corrections_per_day: 10
+session_timeout_minutes: 30
+
+# Notification Settings
+enable_notifications: true
+notification_channel: "console" # console, telegram, discord
+webhook_url: ""
+
+# Advanced Features
+learning_scoring: true
+use_local_llm: false
+local_llm_endpoint: "http://localhost:11434"
+local_llm_model: "llama2"
+
+# File Paths
+learnings_directory: ".learnings"
+templates_directory: "templates"
+hooks_directory: "hooks"
+
+# Logging
+log_level: "info"
+log_file: "claw-selfimprove.log"
+enable_audit_trail: true
+
+# Development Settings
+debug_mode: false
+test_mode: false
+mock_clawmemory: false
